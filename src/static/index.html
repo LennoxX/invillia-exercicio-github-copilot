@@ -26,14 +26,25 @@
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <div class="input-wrapper">
+              <input 
+                type="email" 
+                id="email" 
+                required 
+                placeholder="Enter your school email (e.g., your-email@mergington.edu)" 
+              />
+              <span class="input-icon">&#9993;</span>
+            </div>
           </div>
           <div class="form-group">
             <label for="activity">Select Activity:</label>
-            <select id="activity" required>
-              <option value="">-- Select an activity --</option>
-              <!-- Activity options will be loaded here -->
-            </select>
+            <div class="select-wrapper">
+              <select id="activity" required>
+                <option value="" disabled selected>-- Choose an activity --</option>
+                <!-- Activity options will be loaded here -->
+              </select>
+              <span class="select-icon">&#9662;</span>
+            </div>
           </div>
           <button type="submit">Sign Up</button>
         </form>
